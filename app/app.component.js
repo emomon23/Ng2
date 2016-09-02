@@ -20,12 +20,11 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
-                    this.pageTitle = 'Sports Ur Way';
                 }
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'suw-app',
-                        template: "<div>\n                <h1>\n                    <div>{{pageTitle}}</div>\n                </h1>\n               \n              </div>"
+                        templateUrl: 'app/app.component.template.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
