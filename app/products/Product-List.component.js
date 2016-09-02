@@ -20,7 +20,10 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         execute: function() {
             ProductListComponet = (function () {
                 function ProductListComponet() {
+                    this.products = [{ "name": "iPhone 7", "category": "Phone", "description": "apple phone", "productId": 1, "price": 372.23 },
+                        { "name": "Nexus 6", "category": "Phone", "description": "Google phone", "productId": 2, "price": 299.72 }];
                 }
+                ProductListComponet.prototype.ngOnInit = function () { };
                 ProductListComponet = __decorate([
                     core_1.Component({
                         selector: 'suw-products',
