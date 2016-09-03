@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/http', 'rxjs/Rx', './products/product-list.component'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/http', 'rxjs/Rx', './services/dataaccess/dal', './products/product-list.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/http', 'rxjs/Rx', './products/produc
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, http_1, product_list_component_1;
+    var core_1, http_1, dal_1, product_list_component_1;
     var AppComponent;
     return {
         setters:[
@@ -21,6 +21,9 @@ System.register(['angular2/core', 'angular2/http', 'rxjs/Rx', './products/produc
                 http_1 = http_1_1;
             },
             function (_1) {},
+            function (dal_1_1) {
+                dal_1 = dal_1_1;
+            },
             function (product_list_component_1_1) {
                 product_list_component_1 = product_list_component_1_1;
             }],
@@ -33,7 +36,7 @@ System.register(['angular2/core', 'angular2/http', 'rxjs/Rx', './products/produc
                         selector: 'suw-app',
                         templateUrl: 'app/app.component.template.html',
                         directives: [product_list_component_1.ProductListComponet],
-                        providers: [http_1.HTTP_PROVIDERS]
+                        providers: [http_1.HTTP_PROVIDERS, dal_1.Dal]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

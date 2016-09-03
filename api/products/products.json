@@ -1,37 +1,72 @@
 [
     {
         "productId": 1,
-        "name": "Leaf Rake",
-        "category": "Gardening",
-        "description": "Leaf rake with 48-inch wooden handle.",
+        "name": "Wilson Football",
+        "category": "Sporting Goods",
+        "description": "Official NFL football",
         "price": 19.95       
     },
     {
         "productId": 2,
-        "name": "Garden Cart",
-        "category": "Gardening",
-        "description": "15 gallon capacity rolling garden cart",
-        "price": 32.99
+        "name": "Baseball",
+        "category": "Sporting Goods",
+        "description": "Regulation baseball",
+        "price": 3.22
     },
     {
         "productId": 5,
-        "name": "Hammer",
-        "category": "Gardening",
-        "description": "Curved claw steel hammer",
+        "name": "Basketball",
+        "category": "Sporting Goods",
+        "description": "NBA Basketball",
         "price": 8.9
     },
     {
         "productId": 8,
-        "name": "Saw",
-        "category": "Gardening",
-        "description": "15-inch steel blade hand saw",
-        "price": 11.55
+        "name": "Softball",
+        "category": "Sporting Goods",
+        "description": "Youth softball",
+        "price": 2.16
     },
     {
         "productId": 10,
-        "name": "Video Game Controller",
-        "category": "Gardening",
+        "name": "Softball Glove",
+        "category": "Sporting Goods",
         "description": "Standard two-button video game controller",
         "price": 35.9
+    },
+     {
+        "productId": 11 ,
+        "name": "Rapala Copper 8",
+        "category": "Fishing",
+        "description": "Copper colored, 8' Rapala crank",
+        "price": 4.99
+    },
+    {
+        "productId": 12,
+        "name": "Hummingbird depth finder",
+        "category": "Fishing",
+        "description": "Depth and Fish Finder",
+        "price": 199.99
+    },
+    {
+        "productId": 13,
+        "name": "Golfballs",
+        "category": "Golf",
+        "description": "1 Doz.",
+        "price": 32.99
+    },
+    {
+        "productId": 14,
+        "name": "Calaway Golf Clubs",
+        "category": "Golf",
+        "description": "Top Shelf Golf Clubs",
+        "price": 1299.99
+    },
+    {
+        "productId": 15 ,
+        "name": "Golf Shirt",
+        "category": "Golf",
+        "description": "Cool Shirt",
+        "price": 99.99
     }
 ]
