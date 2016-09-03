@@ -27,11 +27,23 @@ System.register(['angular2/core', '../services/dataaccess/dal', '../pipes/produc
             ProductListComponet = (function () {
                 function ProductListComponet(_dal) {
                     this._dal = _dal;
+                    this._selectedCateogry = 'Home';
                     this.errorMessage = '';
                 }
                 ProductListComponet.prototype.ngOnInit = function () {
                     var _this = this;
-                    this._dal.getProducts().subscribe(function (p) { return _this.products = p; });
+                    this._dal.getProducts().subscribe(function (p) { return _this.onProductsRetrieved(p); });
+                };
+                ProductListComponet.prototype.selectCategory = function (categoryName) {
+                    var _this = this;
+                    this._selectedCateogry = categoryName ? categoryName.toLocaleLowerCase() : null;
+                    this.filterdProducts = categoryName ? this.products.filter(function (product) {
+                        return categoryName == "Home" || product.category.toLocaleLowerCase().indexOf(_this._selectedCateogry) !== -1;
+                    }) : this.products;
+                };
+                ProductListComponet.prototype.onProductsRetrieved = function (products) {
+                    this.products = products;
+                    this.filterdProducts = products;
                 };
                 ProductListComponet = __decorate([
                     core_1.Component({

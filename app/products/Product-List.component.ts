@@ -11,7 +11,9 @@ import { ProductCategories } from '../pipes/product-categories';
 })
 export class ProductListComponet implements OnInit {
    
+    private  _selectedCateogry: string = 'Home';
     products: Product[];
+    filterdProducts: Product[];
     errorMessage: string = '';
    
     constructor(private _dal: Dal){
@@ -19,8 +21,19 @@ export class ProductListComponet implements OnInit {
      }
 
     ngOnInit() : void {
-         this._dal.getProducts().subscribe(p => this.products = p);
+         this._dal.getProducts().subscribe(p => this.onProductsRetrieved(p));
+    }
+
+    selectCategory(categoryName: any) {  
+        this._selectedCateogry = categoryName ? categoryName.toLocaleLowerCase() : null; 
+    
+        this.filterdProducts = categoryName ? this.products.filter((product: Product) => 
+              categoryName == "Home" ||  product.category.toLocaleLowerCase().indexOf(this._selectedCateogry) !== -1) : this.products;
+    
     }
     
-  
+   onProductsRetrieved(products: Product[]) { 
+     this.products = products; 
+     this.filterdProducts = products;
+    }
 }

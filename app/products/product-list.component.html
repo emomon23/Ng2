@@ -1,16 +1,16 @@
  <div class="panel panel-default row">
         <div class="col-xs-3">
-             <a class="btn btn-block btn-default btn-lg" >
+             <a (click)="selectCategory('Home')" class="btn btn-block btn-default btn-lg" >
                Home
              </a>
 
-             <a *ngFor='#category of products | productCategories' class="btn btn-block btn-default btn-lg" >
+             <a (click)="selectCategory(category)" *ngFor='#category of products | productCategories' class="btn btn-block btn-default btn-lg" >
                 {{ category }}
              </a>
         </div>
        
         <div class="col-xs-8">
-           <div class="well" *ngFor='#product of products'>
+           <div class="well" *ngFor='#product of filterdProducts'>
                 <h3>
                     <strong>{{ product.name }}</strong>
                     <span class="pull-right label label-primary">
