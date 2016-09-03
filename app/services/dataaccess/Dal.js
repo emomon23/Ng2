@@ -45,4 +45,4 @@ System.register(['angular2/core', 'angular2/http', 'rxjs/Observable'], function(
         }
     }
 });
-//# sourceMappingURL=Dal.js.map
+//# sourceMappingURL=dal.js.map
