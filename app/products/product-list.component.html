@@ -1,3 +1,5 @@
+ <shopping-cart></shopping-cart>
+  
  <div class="panel panel-default row">
         <div class="col-xs-3">
              <a (click)="selectCategory('Home')" class="btn btn-block btn-default btn-lg" >
@@ -17,6 +19,9 @@
                         {{ product.price | currency:'USD':true:'1.2-2'}}
                     </span>
                 </h3>
+                <button (click)='addToCart(product)' class="btn btn-success pull-right">
+                   Add to cart
+                </button>  
                 <span class="lead">{{ product.description }}</span>
                 <starRating (notify)='onStarsClick($event)' [rating]=product.rating></starRating>
             </div>
