@@ -4,4 +4,5 @@ export class Product{
     category: string;
     description: string;
     price: number;
+    rating: number;
 }

@@ -1,9 +1,9 @@
     <div class='navbar navbar-inverse'>
         <h1>
-	        <a class='nav-brand' href='#'>Sportz Ur Way</a>
+	        <a class='nav-brand' href='#'>{{pageTitle}}</a>
          </h1>
     </div>
 
-    <suw-products>Loading...</suw-products>
+    <suw-products (pageTitleChange)='onPageTitleChange($event)'>Loading...</suw-products>
 
    

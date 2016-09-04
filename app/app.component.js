@@ -30,7 +30,11 @@ System.register(['angular2/core', 'angular2/http', 'rxjs/Rx', './services/dataac
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
+                    this.pageTitle = 'Sportz Ur Way';
                 }
+                AppComponent.prototype.onPageTitleChange = function (message) {
+                    this.pageTitle = "Sportz Ur Way - " + message;
+                };
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'suw-app',

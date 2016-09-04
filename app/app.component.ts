@@ -12,5 +12,9 @@ import { ProductListComponet } from './products/product-list.component'
     providers: [ HTTP_PROVIDERS, Dal]
 })
 export class AppComponent {
-  
+  pageTitle: string = 'Sportz Ur Way';
+
+  onPageTitleChange(message: string){
+     this.pageTitle = `Sportz Ur Way - ` + message;
+  }
 }

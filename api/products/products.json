@@ -4,69 +4,79 @@
         "name": "Wilson Football",
         "category": "Sporting Goods",
         "description": "Official NFL football",
-        "price": 19.95       
+        "price": 19.95,
+        "rating":5       
     },
     {
         "productId": 2,
         "name": "Baseball",
         "category": "Sporting Goods",
         "description": "Regulation baseball",
-        "price": 3.22
+        "price": 3.22,
+        "rating":2     
     },
     {
         "productId": 5,
         "name": "Basketball",
         "category": "Sporting Goods",
         "description": "NBA Basketball",
-        "price": 8.9
+        "price": 8.9,
+        "rating":4     
     },
     {
         "productId": 8,
         "name": "Softball",
         "category": "Sporting Goods",
         "description": "Youth softball",
-        "price": 2.16
+        "price": 2.16,
+        "rating":4
     },
     {
         "productId": 10,
         "name": "Softball Glove",
         "category": "Sporting Goods",
         "description": "Standard two-button video game controller",
-        "price": 35.9
+        "price": 35.9,
+        "rating":5     
     },
      {
         "productId": 11 ,
         "name": "Rapala Copper 8",
         "category": "Fishing",
         "description": "Copper colored, 8' Rapala crank",
-        "price": 4.99
+        "price": 4.99,
+        "rating":5     
     },
     {
         "productId": 12,
         "name": "Hummingbird depth finder",
         "category": "Fishing",
         "description": "Depth and Fish Finder",
-        "price": 199.99
+        "price": 199.99,
+        "rating":4
     },
     {
         "productId": 13,
         "name": "Golfballs",
         "category": "Golf",
         "description": "1 Doz.",
-        "price": 32.99
+        "price": 32.99,
+        "rating":4
     },
     {
         "productId": 14,
         "name": "Calaway Golf Clubs",
         "category": "Golf",
         "description": "Top Shelf Golf Clubs",
-        "price": 1299.99
+        "price": 1299.99,
+        "rating":5     
     },
     {
         "productId": 15 ,
         "name": "Golf Shirt",
         "category": "Golf",
         "description": "Cool Shirt",
-        "price": 99.99
+        "price": 99.99,
+        "rating":5     
     }
 ]
