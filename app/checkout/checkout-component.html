@@ -1,0 +1,46 @@
+<h3>Your cart</h3>
+
+
+<div>
+    <div class="alert alert-warning" *ngIf="cartIsEmpty()">
+        There are no products in this cart!
+        <a [routerLink]="['Products']" class="alert-link">Back to catalogue</a>
+    </div>
+
+    <div *ngIf="!cartIsEmpty()">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="text-center">Qty</th>
+                    <th>Item</th>
+                   <th class="text-right">Price</th>
+                    <th class="text-right">Subtotal</th>
+               </tr>
+            </thead>
+
+            <tbody>
+                <tr *ngFor="#cartItem of cartItems">
+                    <td class="text-center">{{ cartItem.quantity }}</td>
+                    <td class="text-left">{{ cartItem.name }}</td>
+                    <td class="text-right">{{ cartItem.price | currency:'USD':true:'1.2-2' }}</td>
+                    <td class="text-right">{{ (cartItem.price * cartItem.quantity) | currency:'USD':true:'1.2-2'  }}</td>
+                    <td>
+                        <button (click)="removeFromCart(cartItem)" class="btn btn-sm btn-warning">Remove</button>
+                    </td>
+                 </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="text-right">Total:</td>
+                    <td class="text-right">{{ totalCartPrice() | currency:'USD':true:'1.2-2' }}</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div class="text-center">
+            <a class="btn btn-primary" [routerLink]="['Products']">Continue Shopping</a>
+            <a class="btn btn-primary" href="#/placeOrder">Place order now</a>
+        </div>
+    </div>
+</div> 
+-->

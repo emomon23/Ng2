@@ -1,9 +1,9 @@
   <div class="navbar-right">
             <div class="navbar-text">
                 <b>Your cart</b>
-                {{ itemsCount() }} item(s), 
-                {{ totalCartPrice() | currency:'USD':true:'1.2-2' }}
+                {{ cart.totalQuantityInCart }} item(s), 
+                {{ cart.totalCartPrice | currency:'USD':true:'1.2-2' }}
             </div>
 
-            <a href="#/checkout" class="btn btn-default navbar-btn">Checkout</a>
+            <a [routerLink]="['CheckOut']" class="btn btn-default navbar-btn">Checkout</a>
  </div>

@@ -2,11 +2,11 @@
   
  <div class="panel panel-default row">
         <div class="col-xs-3">
-             <a (click)="selectCategory('Home')" class="btn btn-block btn-default btn-lg" >
+             <a (click)="selectCategory('Home')" class="btn btn-block btn-default btn-lg btn-primary" >
                Home
              </a>
 
-             <a (click)="selectCategory(category)" *ngFor='#category of products | productCategories' class="btn btn-block btn-default btn-lg" >
+             <a (click)="selectCategory(category)" *ngFor='#category of products | productCategories' class="btn btn-block btn-default btn-lg btn-primary" >
                 {{ category }}
              </a>
         </div>
